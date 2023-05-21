@@ -60,6 +60,7 @@
 }
 .main-container__pilares {
   display: grid;
+  padding-top: 16px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   background-color: rgb(2, 84, 100);
@@ -79,6 +80,16 @@
 }
 .main-container__icono:hover {
   color: rgb(229, 124, 35);
+}
+
+.carousel__img {
+  width: 100vw;
+}
+.carousel__titulo {
+  color: white;
+}
+.carousel__parrafo {
+  display: none;
 }
 
 .footer-container {
@@ -135,9 +146,26 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
+  .carousel__parrafo {
+    display: block;
+  }
   .footer-container__texto--bold {
     font-weight: bold;
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main-container__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 37, 41, 0.85);
+  }
+  .carousel {
+    width: 1000px;
+  }
+  .carousel__img {
+    width: 1000px;
   }
 }
 
