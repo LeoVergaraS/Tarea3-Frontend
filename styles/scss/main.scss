@@ -7,7 +7,7 @@ $color-light: rgb(248, 241, 241);
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px auto 75px;
+    grid-template-rows: 75px auto auto;
 }
 
 .header-container{
@@ -101,9 +101,41 @@ $color-light: rgb(248, 241, 241);
 }
 
 .footer-container{
+    text-align: center;
+    background-color: $color-primario;
+    padding:20px 0px;
+
+    &__icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    &__img{
+        height: 75px;
+        width: 75px;
+    }
+
     &__texto{
         &--bold{
             display: none;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__item{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+            color: $color-dark;
         }
     }
 }
@@ -112,6 +144,11 @@ $color-light: rgb(248, 241, 241);
     .header-container{
         &__texto{
             display: inline-block;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: $color-dark;
+            }
         }
 
         &__nav{

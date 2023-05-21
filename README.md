@@ -8,3 +8,6 @@ Titulo responsivo
 
 ## Release/0.3.0:
 Pilares responsivos
+
+## Release/0.3.0:
+Footer responsivo
