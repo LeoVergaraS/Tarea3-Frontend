@@ -2,3 +2,6 @@
 
 ## Release/0.1.0:
 Header responsivo
+
+## Release/0.2.0:
+Titulo responsivo
