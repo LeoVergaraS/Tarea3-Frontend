@@ -5,3 +5,6 @@ Header responsivo
 
 ## Release/0.2.0:
 Titulo responsivo
+
+## Release/0.3.0:
+Pilares responsivos
