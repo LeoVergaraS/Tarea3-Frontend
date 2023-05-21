@@ -73,6 +73,7 @@ $color-light: rgb(248, 241, 241);
 
     &__pilares{
         display: grid;
+        padding-top: 16px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         background-color: rgb(2, 84, 100);
@@ -98,6 +99,20 @@ $color-light: rgb(248, 241, 241);
         }
     }
 
+}
+
+.carousel{
+    &__img{
+        width: 100vw;
+    }
+
+    &__titulo{
+        color: white;
+    }
+
+    &__parrafo{
+        display: none;
+    }
 }
 
 .footer-container{
@@ -170,12 +185,37 @@ $color-light: rgb(248, 241, 241);
         }
     }
     
+    .carousel{
+        &__parrafo{
+            display: block;
+        }
+    }
+
     .footer-container{
         &__texto{
             &--bold{
                 font-weight: bold;
                 display: inline-block;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .main-container{
+        &__slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(33, 37, 41, 0.85);
+        }
+    }
+
+    .carousel{
+        width: 1000px;
+
+        &__img{
+            width: 1000px;
         }
     }
 }
