@@ -62,6 +62,23 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(2, 84, 100);
+}
+.main-container__pilar {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding-bottom: 16px;
+}
+.main-container__texto {
+  margin-bottom: 8px;
+}
+.main-container__icono {
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.main-container__icono:hover {
+  color: rgb(229, 124, 35);
 }
 
 .footer-container__texto--bold {
